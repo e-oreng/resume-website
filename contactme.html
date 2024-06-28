@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Layout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header> 
+        <a href="student.html">
+            <img src="PICTURES/el_logo.png" class="logo" alt="Logo">
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="eresume.html">Resume</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="Video.html">My Video</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-me">
+        <div class="left-section">
+            <div class="image-container">
+                <img src="PICTURES/Pic.jpg" alt="Photo of me">
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <hr>
+                <h3>Feel free to contact me!</h3>
+                <br>
+                <a href="https://api.whatsapp.com/send?phone=601151380351" class="fa fa-whatsapp" style="font-size: 20px;"> | +601151380351</a>
+                <br>
+                <a href="#" class="fa fa-facebook" style="font-size: 20px;"> | El Mylin</a>
+                <br>
+                <a href="#" class="fa fa-instagram" style="font-size: 20px;"> | @niella_syd</a>
+                <br>
+                <a href="#" class="fa fa-linkedin" style="font-size: 20px;"> | Elnisyah</a>
+                <br>
+                <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=elnisyah03@gmail.com&tf=1" class="fa fa-envelope" style="font-size: 20px;"> | elnisyah03@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Copyright by Elnisyah Binti Oreng. Last updated: <span id="update-date"></span></p>
+    </div>
+
+    <script>
+        document.getElementById("update-date").innerText = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
